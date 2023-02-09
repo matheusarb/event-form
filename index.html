@@ -21,7 +21,7 @@
         <p>O primeiro passo é preencher esse formulário de inscrição</p>
       </header>
 
-      <form>
+      <form id="my-form">
         <fieldset>
           <div class="fieldset-wrapper">
             <legend>Informações do Evento</legend>
@@ -82,6 +82,11 @@
               >
               <input type="password" id="event-password" />
             </div>
+
+            <div class="checkbox-wrapper">
+              <input type="checkbox" id="event-private" />
+              <label for="event-private">Evento Privado</label>
+            </div>
           </div>
         </fieldset>
 
@@ -108,6 +113,9 @@
           </div>
         </fieldset>
       </form>
+
+      <footer>
+        <input class="button" type="submit" form="my-form" value="Salvar Evento" />
     </div>
   </body>
 </html>
